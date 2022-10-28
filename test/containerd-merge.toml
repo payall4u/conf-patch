@@ -1,0 +1,25 @@
+disabled_plugins = ["restart"]
+oom_score = -999
+root = "/data/containerd"
+state = "/run/containerd"
+subreaper = true
+
+[debug]
+  level = "info"
+
+[plugins]
+  [plugins.cri]
+    enable_selinux = false
+    enable_tls_streaming = false
+    sandbox_image = "ccr.ccs.tencentyun.com/library/pause"
+    stream_server_address = "127.0.0.1"
+    stream_server_port = "8888"
+    [plugins.cri.cni]
+      bin_dir = "/usr/bin"
+      conf_dir = "/etc/cni/net.d"
+      conf_template = ""
+    [plugins.cri.registry]
+      [plugins.cri.registry.mirrors]
+        [plugins.cri.registry.mirrors."ccr.ccs.tencentyun.com"]
+          endpoint = ["https://mirror.ccs.tencentyun.com"]
+

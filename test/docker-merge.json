@@ -1,0 +1,32 @@
+{
+  "bip": "169.254.32.1/28",
+  "bridge": "",
+  "debug": false,
+  "default-runtime": "runc",
+  "exec-opts": [],
+  "exec-root": "",
+  "graph": "/data/docker",
+  "group": "",
+  "hosts": [
+    "unix:///var/run/docker.sock"
+  ],
+  "insecure-registries": [],
+  "ip-forward": true,
+  "ip-masq": true,
+  "iptables": true,
+  "ipv6": false,
+  "labels": [],
+  "live-restore": false,
+  "log-driver": "json-file",
+  "log-level": "warn",
+  "log-opts": {
+    "max-file": "10",
+    "max-size": "100m"
+  },
+  "registry-mirrors": [
+    "https://mirror.ccs.tencentyun.com"
+  ],
+  "runtimes": {},
+  "selinux-enabled": false,
+  "storage-driver": "aufs"
+}

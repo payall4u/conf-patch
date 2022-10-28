@@ -1,0 +1,8 @@
+root = "/data/containerd"
+[debug]
+  level = "info"
+[plugins.cri]
+  stream_server_port = "8888"
+[plugins.cri.cni]
+  bin_dir = "/usr/bin"
+  conf_dir = "/etc/cni/net.d"

@@ -1,0 +1,12 @@
+{
+  "bridge": "",
+  "graph": "/data/docker",
+  "iptables": true,
+  "ip-masq": true,
+  "live-restore": false,
+  "log-driver": "json-file",
+  "log-opts": {"max-size": "100m","max-file": "10"},
+  "registry-mirrors": ["https://mirror.ccs.tencentyun.com"],
+  "storage-driver": "aufs",
+  "storage-opts": null
+}
